@@ -12,6 +12,7 @@ pkg install -y git
 pkg install -y exa
 pkg install -y termux-services
 pkg install -y nodejs
+pkg install -y vim
 
 if [ ! -d "$HOME/.powerlevel10k" ]; then
   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.powerlevel10k
