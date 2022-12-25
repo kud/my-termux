@@ -24,10 +24,6 @@ export CLICOLOR=1
 # display
 DISPLAY=:0.0; export DISPLAY
 
-# british and utf-8
-export LANG="en_GB"
-export LC_ALL="en_GB.UTF-8"
-
 # increase opened files size
 ulimit -n 1024
 
