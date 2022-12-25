@@ -14,6 +14,12 @@ pkg install -y termux-services
 pkg install -y nodejs
 pkg install -y vim
 
+mkdir -p ~/.vim/colors
+
+# OceanicNext
+rm -f ~/.vim/colors/OceanicNext.vim
+curl -sL https://raw.githubusercontent.com/mhartington/oceanic-next/master/colors/OceanicNext.vim > ~/.vim/colors/OceanicNext.vim
+
 if [ ! -d "$HOME/.powerlevel10k" ]; then
   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.powerlevel10k
 else
@@ -30,7 +36,7 @@ else
   cd -
 fi
 
-for dotfile in "${ZDOTDIR:-$HOME}"/.my/dotfiles/.{aliases,gitconfig,gitignore_global,zshrc}; do
+for dotfile in "${ZDOTDIR:-$HOME}"/.my/dotfiles/.{aliases,gitconfig,gitignore_global,zshrc,vimrc}; do
   ln -sf "$dotfile" "${ZDOTDIR:-$HOME}/${dotfile:t}" 2> /dev/null
 done
 

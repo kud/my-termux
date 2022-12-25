@@ -30,6 +30,11 @@ yes|pkg upgrade -y && pkg install -y openssl curl zsh && chsh -s zsh && termux-s
 curl --silent https://raw.githubusercontent.com/kud/my-termux/main/core/start.sh -H 'Cache-Control: no-cache, no-store; Pragma: no-cache'|zsh
 ```
 
+## Post-installation
+
+- Set "Nancy" as style for Termux
+- Set "Hack" as font-style for Termux
+
 ## Termux:Addons
 
 - [Termux:Boot](https://f-droid.org/en/packages/com.termux.boot)
