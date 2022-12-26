@@ -20,6 +20,14 @@ mkdir -p ~/.vim/colors
 rm -f ~/.vim/colors/OceanicNext.vim
 curl -sL https://raw.githubusercontent.com/mhartington/oceanic-next/master/colors/OceanicNext.vim > ~/.vim/colors/OceanicNext.vim
 
+if [ ! -d "$HOME/.my" ]; then
+  git clone --depth=1 https://github.com/kud/my-termux.git ~/.my
+else
+  cd ~/.my
+  git pull
+  cd -
+fi
+
 if [ ! -d "$HOME/.powerlevel10k" ]; then
   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.powerlevel10k
 else
@@ -28,12 +36,11 @@ else
   cd -
 fi
 
-if [ ! -d "$HOME/.my" ]; then
-  git clone --depth=1 https://github.com/kud/my-termux.git ~/.my
+if [ ! -d "$HOME/.znap" ]; then
+  git clone --depth=1 https://github.com/marlonrichert/zsh-snap.git ~/.znap
+  source zsh-snap/install.zsh
 else
-  cd ~/.my
-  git pull
-  cd -
+  znap pull
 fi
 
 for dotfile in "${ZDOTDIR:-$HOME}"/.my/dotfiles/.{aliases,gitconfig,gitignore_global,zshrc,vimrc}; do

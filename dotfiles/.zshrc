@@ -8,6 +8,14 @@ fi
 # powerlevel10k
 . ~/.powerlevel10k/powerlevel10k.zsh-theme
 
+# znap
+source ~/.znap/znap.zsh
+
+# `znap source` automatically downloads and starts your plugins.
+znap source marlonrichert/zsh-autocomplete
+znap source zsh-users/zsh-autosuggestions
+znap source zsh-users/zsh-syntax-highlighting
+
 ## create a folder and go in it
 function mcd() {
   mkdir -p "$1" && cd "$1";
