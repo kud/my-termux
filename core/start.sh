@@ -40,7 +40,7 @@ for dotfile in "${ZDOTDIR:-$HOME}"/.my/dotfiles/.{aliases,gitconfig,gitignore_gl
   ln -sf "$dotfile" "${ZDOTDIR:-$HOME}/${dotfile:t}" 2> /dev/null
 done
 
-touch .zshrc_local
+touch $HOME/.zshrc_local
 
 curl --silent https://raw.githubusercontent.com/kud/my-termux/main/core/npm.sh -H 'Cache-Control: no-cache, no-store; Pragma: no-cache'|zsh
 
