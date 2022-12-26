@@ -13,6 +13,7 @@ pkg install -y exa
 pkg install -y termux-services
 pkg install -y nodejs
 pkg install -y vim
+pkg install -y autojump
 
 mkdir -p ~/.vim/colors
 

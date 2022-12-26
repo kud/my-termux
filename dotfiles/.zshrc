@@ -9,6 +9,7 @@ fi
 . ~/.powerlevel10k/powerlevel10k.zsh-theme
 
 # znap
+zstyle ':znap:*' repos-dir ~/.zsh
 source ~/.znap/znap.zsh
 
 # `znap source` automatically downloads and starts your plugins.
