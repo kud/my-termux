@@ -14,6 +14,7 @@ pkg install -y termux-services
 pkg install -y nodejs
 pkg install -y vim
 pkg install -y autojump
+pkg install -y speedtest-go
 
 mkdir -p ~/.vim/colors
 
