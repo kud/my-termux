@@ -41,6 +41,8 @@ if [ ! -d "$HOME/.znap" ]; then
   git clone --depth=1 https://github.com/marlonrichert/zsh-snap.git ~/.znap
   source ~/.znap/install.zsh
 else
+  zstyle ':znap:*' repos-dir ~/.zsh
+  source ~/.znap/znap.zsh
   znap pull
 fi
 
