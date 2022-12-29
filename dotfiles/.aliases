@@ -49,9 +49,6 @@ alias dnsmasq.conf="$EDITOR -n ${HOMEBREW_PREFIX}/etc/dnsmasq.conf"
 alias android-inspector='adb forward tcp:9222 localabstract:chrome_devtools_remote'
 alias adb-logcat='adb logcat browser:IEW "*:S"'
 
-# ios
-# alias ios-simulator="open -a /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app"
-
 # (un)compression
 alias tarls='tar -tf'
 alias tgz='tar -czf'
@@ -63,12 +60,9 @@ alias klook='qlmanage -p "$@" >& /dev/null'
 
 alias yarn-check='yarn upgrade-interactive --latest'
 
-# github
-# alias fake-github-connection='ssh -N git@github.com'
-
 # ease
-# alias s='subl .'
-# alias s-add='subl -a .'
+# alias acode="am start --user 0 -n com.foxdebug.acode/com.foxdebug.acode.MainActivity"
+alias code='acode'
 alias c='code .'
 # alias s-nm='subl -a node_modules'
 alias about='neofetch'

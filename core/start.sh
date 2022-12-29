@@ -18,6 +18,7 @@ pkg install -y speedtest-go
 pkg install -y termux-api
 pkg install -y rclone
 pkg install -y openssh
+pkg install -y android-tools
 
 mkdir -p ~/.vim/colors
 
