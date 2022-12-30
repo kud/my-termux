@@ -13,6 +13,7 @@ pkg install -y exa
 pkg install -y termux-services
 pkg install -y nodejs
 pkg install -y vim
+pkg install -y neovim
 pkg install -y autojump
 pkg install -y speedtest-go
 pkg install -y termux-api
@@ -46,7 +47,7 @@ if [ ! -d "$HOME/.znap" ]; then
   git clone --depth=1 https://github.com/marlonrichert/zsh-snap.git ~/.znap
   source ~/.znap/install.zsh
 else
-  zstyle ':znap:*' repos-dir ~/.zsh
+  zstyle ':znap:*' repos-dir ~/.zsh-plugins
   source ~/.znap/znap.zsh
   znap pull
 fi
